@@ -6,7 +6,6 @@ document.querySelector('form').addEventListener('submit', async function (evt) {
     const email = document.querySelector('#email').value;
     const password = document.querySelector('#password').value;
     const imagePerfil = document.querySelector('#imagePerfil').files[0];
-    console.log(imagePerfil)
     const formData = new FormData();
 
     formData.append('image', imagePerfil);
