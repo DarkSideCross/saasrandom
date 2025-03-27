@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+header nav li {
+    display: inline;
+    color: black;
+    font-family: 'Lucida Sans';
+}
+
+header nav a {
+    text-decoration: none;
+}
+
+header nav ul > a + a {
+    margin-left: 1.5rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: end;
+    padding: 2rem 3rem;
+}
+
+.image-user {
+    display: flex;
+    justify-content: center;
+}
+

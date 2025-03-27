@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saas Random</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <%- include('./partials/header.ejs') %>
+
+    <h1>Seja Bem-Vindo <%= userLogin ? userLogin.name : "Usuário" %></h1>
+
+    <div class="image-user">
+        <img src="<%= userLogin ? `data:image/jpeg;base64,${imagePerfilBase64}` : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnyou2ZtjP6jn_NGApj8LpsBjR5veuD5T4sA&s" %>" width="300" alt="Imagem Usuario">
+    </div>
+    
+</body>
+</html>

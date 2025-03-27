@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saas Random</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <%- include('./partials/header.ejs') %>
+    
+    <h1>Cadastre-se</h1>
+
+    <form>
+        <label for="name">Nome: </label>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="email"><br>
+        <label for="password">Senha: </label>
+        <input type="text" id="password" name="password"><br>
+        <input type="file" id="imagePerfil" name="imagePerfil" value="Adicionar Imagem"><br>
+        <input type="submit" id="btn-register" value="Cadastre-se"><br>
+        <span id="errors"></span>
+    </form>
+
+    <script src="./javascript/register.js"></script>
+
+
+</body>
+</html>
